@@ -10,6 +10,7 @@ var decisionObject = state.getDecisionObject({
   shouldCleanString: true
 });
 
+//Make sure the user is not in the holdback
 if (decisionObject) {
 
 var experimentId = decisionObject["experiment"].split(' ')[1].replace(/[()]/g, '');
